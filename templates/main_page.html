@@ -1,3 +1,6 @@
+<title>
+<meta> description or author
+<meta> charset utf-8
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,22 +15,26 @@
   </head>
   <body>
     <div id="banner" class="container">
-      <h1 class="display-4">Hello, world!</h1>
+      <h1 class="display-4">What Mythical Creature Are You?</h1>
     </div>
     <div class="container">
       <form action="{{ url_for('process_inputs') }}" method="post">
         <div class="form-group">
           <label for="input_name">First Name</label>
-          <input type="text" class="form-control" name="input_name"  id="input_name" placeholder="Fred Flintstone">
+          <input type="text" class="form-control" name="input_name"  id="input_name" placeholder="Johnny Appleseed">
         </div>
         <div class="form-group">
-          <label for="input_dropdown">Example select</label>
+          <label for="input_dropdown">Favorite Color</label>
           <select class="form-control" name="input_dropdown" id="input_dropdown">
-            <option>1 fish</option>
-            <option>2 fish</option>
-            <option>red fish</option>
-            <option>the spanish inquisition</option>
-            <option>blue fish</option>
+            <option>Blue</option>
+            <option>Green</option>
+            <option>Black</option>
+            <option>Yellow</option>
+            <option>Purple</option>
+            <option>Orange</option>
+            <option>Red</option>
+            <option>Pink</option>
+            <option>Brown</option>
           </select>
         </div>
         <div class="form-group">
